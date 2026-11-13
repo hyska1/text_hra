@@ -51,11 +51,11 @@ def vyber():
                 komponenty = []
                 if cislo1 == 1 or cislo2 == 1:
                     komponenty.append("pevne_rafky")
-                elif cislo1 == 2 or cislo2 == 2:
+                if cislo1 == 2 or cislo2 == 2:
                     komponenty.append("lehke_rafky")
-                elif cislo1 == 3 or cislo2 == 3:
+                if cislo1 == 3 or cislo2 == 3:
                     komponenty.append("silne_brzdy")
-                elif cislo1 == 4 or cislo2 == 4:
+                if cislo1 == 4 or cislo2 == 4:
                     komponenty.append("spolehlive_brzdy")
         return komponenty
 def vypis():
