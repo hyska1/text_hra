@@ -8,6 +8,7 @@ def cas(cas_navic):
     print(f"Gratulace, přežil jsi! Tvůj celkový čas je {vysledek}s.")
 
 cas_navic = 0
+
 def dotaz (otazka, moznosti):
     while True:
         odpoved = input(otazka).lower().strip()
@@ -38,11 +39,8 @@ def vyber():
             if cislo1 == cislo2:
                 print("Čísla se musí lišit.")
                 continue
-            elif cislo1 < 0 or cislo2 < 0:
-                print ("zadej vyšší číslo")
-                continue
             elif cislo1 > 4 or cislo1 < 1 or cislo2 > 4 or cislo2 < 1:
-                print("Zadej nižší číslo nebo přidej čárku.")
+                print("Zadej čísla v rozmezí 1-4")
                 continue
             elif (cislo1 <= 2 and cislo2 <= 2) or (cislo1 >= 3 and cislo2 >= 3):
                 print("Musíš vybrat od každého jedno.")
@@ -104,7 +102,6 @@ def drop():
             else:
                 print("Čistý dolet.")
                 return 0
-            return 0
     else:
         print("Dobrý (+2s).")
         return 2
